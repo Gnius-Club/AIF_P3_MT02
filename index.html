@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM02</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2 3ro Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Micro:bit: Matriz LED (mostrar icono, mostrar LEDs X/O).</li>
+                                        <li>Plan (GCS): AL INICIO.</li>
+                                        <li>IA (Conceptual): Microcontroladores y cómo el chatbot IA ayuda con las “ideas” para el plan (GCS).</li>
+                                        <li>Preparatorio IA: Rol del chatbot como asistente para traducir ideas a código (Vibe Coding).</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a controlar individualmente los LEDs de la matriz del Micro:bit para crear sus propios dibujos, reforzando la estructura AL INICIO y el rol del chatbot como asistente para traducir sus ideas en un plan (GCS).</li>
+                                    </ul>
+                                    <strong>Tácticas Principales:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y bloques.</li>
+                                        <li><strong class="tactic-highlight">Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y programación individual.</li>
+                                        <li><strong class="tactic-highlight">Gnius STORM (Think-Pair-Share):</strong> Compartición, prueba y retroalimentación de proyectos.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en Micro:bit que muestre un dibujo personalizado en la matriz LED, encendiendo y apagando LEDs individuales, creado a partir de un plan (GCS) generado con la ayuda de la IA y traducido a bloques en MakeCode.</li>
+                                        <li>Retroalimentación recibida y dada durante Gnius STORM.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo IA) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-16 propuestas para esta sesión).</li>
+                                        <li>Micro:bits y baterías.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar disponibilidad y carga de Micro:bits/baterías.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional un proyecto en Micro:bit que muestre un dibujo personalizado usando el control individual de LEDs (ej. una letra, una carita simple, diferente a una flecha). Este proyecto debe ser creación del profesor.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por aprender a dibujar con luces.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo del Profesor e Instrucción a Xolo ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Saludar a los alumnos y dar la instrucción de recordar su perfil a la IA y saludarla.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a una nueva Misión! Como siempre, vamos a activar a Xolo. Salúdenlo y recuérdenle su perfil para que pueda personalizar la aventura de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Respuesta de Xolo y Verificación ⏰ 2.5 minutos</h3>
+                            <p>(Los alumnos interactúan con Xolo. El profesor monitorea).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está respondiendo. Hoy nos va a ayudar a convertirnos en verdaderos artistas de la tecnología, ¡vamos a aprender a dibujar con luces en nuestro Micro:bit! Asegúrense de que todos hayan podido saludar a Xolo y que él les haya contestado. Si alguien tiene algún problema o Xolo no responde, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Introducción de la Misión con "I Can Statement" ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y mostrar un ejemplo de dibujo con LEDs individuales.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Micro:bit como Lienzo de Luces ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). El profesor explica la matriz LED y muestra su ejemplo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Artistas! La pantalla del Micro:bit es como un lienzo especial de 5x5 luces. ¿Ven todos estos puntitos? (Señalar la matriz LED). Podemos decirle a cada uno si queremos que se encienda o se apague. ¡Así podemos dibujar lo que se nos ocurra! Para que vean, yo hice este dibujo: (El profesor muestra SU Micro:bit con SU ejemplo de dibujo personalizado, ej: "una carita sonriente" o "la letra inicial de mi nombre"). Yo le dije exactamente qué luces encender para formar esta figura.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). El profesor presenta el "I Can Statement".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a aprender a ser los pintores de sus propias luces. Al final de la clase, podrán decir: <strong>"Yo puedo crear mi propio dibujo en la pantalla del Micro:bit encendiendo y apagando las luces que yo quiera, usando mi plan y la ayuda de la IA."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Invitación a la Creatividad ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5). Motivar a los alumnos a pensar en sus propios diseños.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Así que, vayan pensando... ¿Qué les gustaría dibujar hoy con luces en su Micro:bit? ¿Una flecha, una casa, una figura geométrica? ¡Las posibilidades son muchas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Los alumnos interactúan con Xolo para aprender sobre microcontroladores, la matriz LED y el comando "mostrar LEDs X/O".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para interactuar con Xolo ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 6). Guiar a los alumnos para que pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Listos para el A.I. GYM! 🎨 Xolo nos va a dar las herramientas para pintar con luz. Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me expliques qué es un microcontrolador, cómo funciona la pantalla de 5x5 luces del Micro:bit y cómo le doy instrucciones para encender luces específicas con 'X' y 'O'.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo y Preguntas ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 7 y 8 durante la interacción). Los alumnos reciben la explicación de Xolo directamente en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Muy bien! Xolo les está explicando que el Micro:bit es un pequeño computador (microcontrolador) que puede controlar cosas, como su pantalla de 5x5 luces (matriz LED). Les está contando cómo ustedes le dan una 'idea', y él les ayuda con el 'plan' (GCS). Y lo más importante para hoy: les está introduciendo el comando `mostrar LEDs` donde usan 'X' para encender un LED y 'O' para apagarlo, ¡como si fuera un mapa de su dibujo! Todo esto irá dentro de la instrucción `AL INICIO:` que ya conocen. Si tienen dudas sobre cómo funciona la cuadrícula X/O o qué es un microcontrolador, ¡es el momento de preguntar a Xolo!<br>
+                                    <strong>* 'Xolo, ¿puedes darme un ejemplo de una cuadrícula simple para una carita?'</strong><br>
+                                    <strong>* '¿Por qué se llama matriz LED?'</strong><br>
+                                    <strong>* 'Si me equivoco en una X o una O, ¿qué pasa?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Proceso de ideación, diseño (plan con IA) y programación individual para crear un dibujo personalizado con LEDs.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ideación de su Dibujo con Luces ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Pregunta activadora para la idea del dibujo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Artistas, a sus puestos! Ahora que saben cómo encender y apagar cada luz, <strong>¿qué dibujo original les gustaría crear en la pantalla de su Micro:bit? Puede ser una flecha, la inicial de su nombre, un pequeño cohete, una casa... ¡lo que su imaginación les dicte!</strong> Piensen en un diseño que puedan representar en una cuadrícula de 5x5. Tienen 1 minuto para pensar en su idea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pedir el Plan a Xolo para su Dibujo ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Instrucción para pedir el plan (GCS) a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya tienen su idea de dibujo? ¡Fantástico! Ahora, cuéntenle a Xolo. Por ejemplo, escriban en el chat: <strong>'Xolo, quiero que mi Micro:bit muestre una flecha hacia arriba cuando empiece.'</strong> (O el dibujo que hayan elegido). Xolo les ayudará a crear el 'plan' con la cuadrícula de X y O.</p>
+                                 <p class="dialogue assistant">Xolo les podría responder algo así para una flecha hacia arriba:</p>
+                                 <pre class="dialogue assistant" style="color: #d32f2f;">
+// Esto dibujará una flecha hacia arriba en la pantalla del Micro:bit al encenderse.
+AL INICIO:
+    mostrar LEDs OOXOO
+                 OXOXO
+                 XOOOX
+                 OOXOO
+                 OOXOO</pre>
+                                 <p class="dialogue assistant">¡Observen bien cómo se forma la figura con las X y las O en el plan que Xolo les dé para SU dibujo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación en MakeCode y Prueba del Dibujo ⏰ 13 minutos</h3>
+                            <p>(Proyectar Diapositiva 11). Tiempo para traducir el plan a bloques, probar y depurar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Muy bien! Ahora tienen su 'plan' detallado de Xolo. Es el momento de ir a MakeCode. Busquen el bloque 'al iniciar' y dentro coloquen el bloque 'mostrar LEDs'. Tendrán que hacer clic en los cuadraditos de la pantalla del bloque para encender (X) y apagar (O) los LEDs, ¡exactamente como dice su plan! Tienen 13 minutos.<br>
+                                    <strong>* Prueben primero en el simulador de MakeCode.</strong> ¿Se ve su dibujo como lo imaginaron?<br>
+                                    <strong>* Si no se ve bien, revisen su plan y cómo hicieron clic en los LEDs del bloque. ¡A veces un clic de más o de menos cambia todo el dibujo! Corregir es parte del arte.</strong><br>
+                                    Cuando funcione en el simulador, ¡conecten su Micro:bit, descarguen el programa y vean su obra de arte luminosa!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Mejoras - Más Diseños (Si hay tiempo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 12). Sugerir mejoras y exploraciones adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Si ya terminaron su primer dibujo, ¡son unos artistas veloces! ¿Qué tal un nuevo desafío? <strong>¿Qué otro ícono o letra les gustaría mostrar? ¿Pueden hacer que la flecha (si hicieron una) apunte en otra dirección (abajo, izquierda, derecha)? ¿O quizás dibujar un patrón geométrico simple como un cuadrado o un rombo?</strong> Pídanle a Xolo el plan para su nueva idea, o intenten modificar su cuadrícula actual. ¡Sigan pintando con luz!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir diseños personalizados, recibir retroalimentación y reflexionar sobre la creación con LEDs.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 13). Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Artistas, qué grandes creaciones! Antes de mostrar sus obras, piensen un momento:<br>
+                                    <strong>¿Qué fue lo más divertido de crear su propio dibujo con luces?</strong><br>
+                                    <strong>¿Fue fácil o difícil decirle al Micro:bit exactamente qué luces encender?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 14). Instrucciones para el intercambio de proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, en parejas! Muestren su Micro:bit con su diseño personalizado. Explíquenle a su compañero qué intentaron dibujar y cómo lo planificaron con la cuadrícula. El compañero puede preguntar:<br>
+                                    <strong>* '¿Por qué elegiste ese dibujo?'</strong><br>
+                                    <strong>* '¿Te costó trabajo hacer la cuadrícula de X y O?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación y Reflexión Grupal) ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 15). Fomentar la compartición de experiencias y la reflexión sobre la "comprensión" del Micro:bit.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Muy bien! Ahora, algunas preguntas para todos: ¿Qué fue lo más divertido de crear su propio dibujo? ¿Fue fácil decirle al Micro:bit qué luces encender? Y una pregunta curiosa: ¿Creen que su Micro:bit "entendió" su idea de dibujo, o solo siguió las instrucciones de encender y apagar luces?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Cierre del Profesor/Chatbot) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 16). Cierre de la sesión por el profesor y/o chatbot.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Felicidades, artistas y programadores! Hoy controlaron cada luz de su Micro:bit como verdaderos ingenieros. Convirtieron una idea en un código que la máquina entiende. Así funciona la IA: traduce nuestras ideas (la 'idea' o 'vibe') en acciones concretas. ¡Nos vemos en la próxima sesión de Vibe Coding! ¡Excelente trabajo a todos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
